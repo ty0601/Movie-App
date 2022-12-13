@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#011525"
+        tools:context=".MoreActivity">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="back"
+            tools:ignore="OnClick"/>
+
+    <ImageView
+            android:id="@+id/back_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"/>
+
+    <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/back_path">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="32dp">
+
+        <TextView
+                android:id="@+id/more_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title : "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/quicksand"/>
+
+            <TextView
+                    android:id="@+id/more_date"
+                    android:layout_below="@+id/more_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Release date : "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/quicksand"/>
+
+            <TextView
+                    android:id="@+id/more_rate"
+                    android:layout_below="@+id/more_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Rate : "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/quicksand"/>
+
+            <TextView
+                    android:id="@+id/more_overview"
+                    android:layout_below="@+id/more_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Overview : "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/quicksand"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
